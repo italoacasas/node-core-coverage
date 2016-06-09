@@ -3,7 +3,7 @@ set -e
 ORIGWD="$(pwd)"
 SRCDIR="$(cd $(dirname -- ${0%/*}) && pwd)"
 
-JOBS="${JOBS:-1}"
+JOBS="${JOBS:-4}"
 WORKDIR="${WORKDIR:-$ORIGWD/workdir}"
 MAKE="${MAKE:-make -j$JOBS}"
 
