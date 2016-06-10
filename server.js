@@ -1,30 +1,18 @@
 'use strict';
 
-const http = require('http');
+const app = require('express')();
 const path = require('path');
-const fs = require('fs');
 
-const server = http.createServer();
-const port = process.env.PORT || 80;
+const port = process.env.NODE_PORT || 80;
 
-function onRequest (req, res) {
-    const index = path.join(__dirname, 'out', 'index.html');
-    let rs = fs.createReadStream(index);
+app.use(express.compress());
 
-    rs.setHeader('Content-Type', 'text/html');
-    rs.pipe(res);
+app.use(express.static(path.join(__dirname, 'out')));
 
-    rs.on('error', err => {
-        res.setHeader('Content-Type', 'text/plain')
-        res.end(err.message)
-    });
-}
-
-function onListening () {
-    console.log(`Server running in port ${port}`)
-}
-
-server.on('request', onRequest);
-server.on('listening', onListening);
-
-server.listen(port);
+app.listen(port, '0.0.0.0', err => {
+    if (err) {
+        console.log(err)
+        return;
+    }
+    console.log(`Server running in port ${port}`);
+})
