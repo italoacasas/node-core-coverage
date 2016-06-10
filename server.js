@@ -1,12 +1,13 @@
 'use strict';
 
-const express = require('express');
 const path = require('path');
+const express = require('express');
+const compression = require('compression');
 
 const app = express();
 const port = process.env.NODE_PORT || 80;
 
-app.use(express.compress());
+app.use(compression());
 
 app.use(express.static(path.join(__dirname, 'out')));
 
