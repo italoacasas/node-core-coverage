@@ -35,14 +35,14 @@ with open('out/index.html', 'w') as out:
       <!-- Navigation. We hide it in small screens. -->
       <nav class="mdl-navigation mdl-layout--large-screen-only">
         <a class="mdl-navigation__link" href="https://github.com/nodejs/node">Node.js Core</a>
-        <a class="mdl-navigation__link" href="https://github.com/addaleax/node-core-coverage">Project</a>
+        <a class="mdl-navigation__link" href="https://github.com/italoacasas/node-core-coverage">Project</a>
       </nav>
     </div>
   </header>
   <div class="mdl-layout__drawer">
     <nav class="mdl-navigation">
         <a class="mdl-navigation__link" href="https://github.com/nodejs/node">Node.js Core</a>
-        <a class="mdl-navigation__link" href="https://github.com/addaleax/node-core-coverage">Project</a>
+        <a class="mdl-navigation__link" href="https://github.com/italoacasas/node-core-coverage">Project</a>
     </nav>
   </div>
 
