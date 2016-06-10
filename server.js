@@ -1,8 +1,9 @@
 'use strict';
 
-const app = require('express')();
+const express = require('express');
 const path = require('path');
 
+const app = express();
 const port = process.env.NODE_PORT || 80;
 
 app.use(express.compress());
