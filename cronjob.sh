@@ -1,7 +1,7 @@
 #!/bin/bash
 NOW=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
 LOGFILE="out/$NOW.log"
-export JOBS=8
+export JOBS=1
 
 mkdir -p out
 if ./coverage.sh > "$LOGFILE" 2>&1; then
