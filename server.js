@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, 'out')));
 
 app.listen(port, '0.0.0.0', err => {
     if (err) {
-        console.log(err)
+        console.log(err);
         return;
     }
     console.log(`Server running in port ${port}`);
