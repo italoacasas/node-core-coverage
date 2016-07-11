@@ -1,10 +1,10 @@
 {
   "name": "node-core-coverage",
-  "description": "Node.js Core Test Coverage",
-  "version": "1.1.0",
+  "description": "Test coverage for the Node.js Core",
+  "version": "1.0.0",
   "author": "SEE AUTHORS.md",
   "bugs": {
-    "url": "https://github.com/italoacasas/node-core-coverage/issues"
+    "url": "git+https://github.com/italoacasas/node-core-coverage/issues"
   },
   "dependencies": {
     "compression": "^1.6.2",
@@ -15,7 +15,7 @@
   "devDependencies": {
     "fixpack": "^2.3.1"
   },
-  "homepage": "https://github.com/italoacasas/node-core-coverage#readme",
+  "homepage": "http://nodejs-coverage.com",
   "license": "MIT",
   "main": "server.js",
   "repository": {

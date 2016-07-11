@@ -71,9 +71,10 @@ $MAKE
 echo "Testing..." >&2
 ./node -v
 
-# This corresponds to `make test` up to removal of `message`.
+# This corresponds to `make test` up to removal of `test/message`.
+$MAKE build-addons cctest
 python tools/test.py --mode=release -J \
-  addon doctool known_issues pseudo-tty parallel sequential
+  addons doctool known_issues pseudo-tty parallel sequential
 
 echo "Gathering coverage..." >&2
 mkdir -p coverage
